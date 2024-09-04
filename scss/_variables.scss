@@ -4,7 +4,7 @@
 // Color Variables
 // Bootstrap Color Overrides
 
-
+$fa-fw-width: 1em;
 
 $white: #fff !default;
 $gray-100: #f8f9fc !default;
@@ -30,9 +30,11 @@ $teal: #20c9a6 !default;
 $cyan: #36b9cc !default;
 $custom:  #eee !default;
 $custom2:  #151a19 !default;
-
-
+  
+   
 $primary: $custom2 !default;
+
+$input-font-size2:              .7rem !default; // Assumes the browser default, typically `16px`
 
 // Custom Colors
 $brand-google: #ea4335 !default;
@@ -60,14 +62,14 @@ $box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, .15) !default;
 // $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
 
 // Borders Radius
-$border-radius: 0.25rem !default;
+$border-radius: 0.1rem !default;
 $border-color: darken($gray-200, 2%) !default;
 
 // Spacing Variables
 // Change below variable if the height of the navbar changes
 $topbar-base-height: 4.375rem !default;
 // Change below variable to change the width of the sidenav
-$sidebar-base-width: 14rem !default;
+$sidebar-base-width: 12rem !default;
 // Change below variable to change the width of the sidenav when collapsed
 $sidebar-collapsed-width: 6.5rem !default;
 
@@ -83,7 +85,7 @@ $grid-gutter-width: $spacer * 1.5 !default;
 $transition-collapse: height .15s ease !default;
 
 // Dropdowns
-$dropdown-font-size: 0.85rem !default;
+$dropdown-font-size: 12px !default;
 $dropdown-border-color: $border-color !default;
  
 // Images

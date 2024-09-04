@@ -280,7 +280,7 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              0.75rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .7rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
@@ -385,10 +385,10 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .1rem !default;
+$input-btn-padding-x:         .6rem !default;
 $input-btn-font-family:       null !default;
-$input-btn-font-size:         $font-size-base !default;
+$input-btn-font-size:         12px!default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;
@@ -452,12 +452,14 @@ $btn-transition:              color .15s ease-in-out, background-color .15s ease
 
 // Forms
 
+$input-font-size2:   .5rem !default; 
+
 $label-margin-bottom:                   .5rem !default;
 
 $input-padding-y:                       $input-btn-padding-y !default;
 $input-padding-x:                       $input-btn-padding-x !default;
 $input-font-family:                     $input-btn-font-family !default;
-$input-font-size:                       $input-btn-font-size !default;
+$input-font-size:                       $input-font-size2 !default;
 $input-font-weight:                     $font-weight-base !default;
 $input-line-height:                     $input-btn-line-height !default;
 
@@ -782,8 +784,8 @@ $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-500 !default;
 
-$dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           .1rem !default;
+$dropdown-item-padding-x:           0.5rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding:           $dropdown-padding-y $dropdown-item-padding-x !default;
