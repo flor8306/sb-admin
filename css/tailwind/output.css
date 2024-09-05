@@ -616,11 +616,6 @@ video {
   top: 1.5rem !important;
 }
 
-.tw-mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 .tw-mb-0 {
   margin-bottom: 0px !important;
 }
@@ -637,12 +632,20 @@ video {
   margin-right: 0.5rem !important;
 }
 
+.tw-mt-1 {
+  margin-top: 0.25rem !important;
+}
+
 .tw-box-content {
   box-sizing: content-box !important;
 }
 
 .tw-flex {
   display: flex !important;
+}
+
+.tw-hidden {
+  display: none !important;
 }
 
 .tw-h-\[28px\] {
@@ -661,10 +664,6 @@ video {
   flex-basis: 8.333333% !important;
 }
 
-.tw-basis-11\/12 {
-  flex-basis: 91.666667% !important;
-}
-
 .tw-basis-3\/4 {
   flex-basis: 75% !important;
 }
@@ -679,6 +678,10 @@ video {
 
 .tw-justify-center {
   justify-content: center !important;
+}
+
+.tw-justify-between {
+  justify-content: space-between !important;
 }
 
 .tw-gap-1 {
@@ -724,6 +727,11 @@ video {
   padding: 0.5rem !important;
 }
 
+.tw-px-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+
 .tw-px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -756,6 +764,10 @@ video {
   font-size: 13px !important;
 }
 
+.tw-leading-5 {
+  line-height: 1.25rem !important;
+}
+
 .tw-text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
@@ -775,4 +787,46 @@ video {
 .hover\:tw-bg-rose-200:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(254 205 211 / var(--tw-bg-opacity)) !important;
+}
+
+@media (min-width: 768px) {
+  .md\:tw-mb-0 {
+    margin-bottom: 0px !important;
+  }
+
+  .md\:tw-ml-1 {
+    margin-left: 0.25rem !important;
+  }
+
+  .md\:tw-mt-0 {
+    margin-top: 0px !important;
+  }
+
+  .md\:tw-flex {
+    display: flex !important;
+  }
+
+  .md\:tw-flex-1 {
+    flex: 1 1 0% !important;
+  }
+
+  .md\:tw-basis-1\/12 {
+    flex-basis: 8.333333% !important;
+  }
+
+  .md\:tw-basis-1\/3 {
+    flex-basis: 33.333333% !important;
+  }
+
+  .md\:tw-basis-2\/3 {
+    flex-basis: 66.666667% !important;
+  }
+
+  .md\:tw-flex-col {
+    flex-direction: column !important;
+  }
+
+  .md\:tw-gap-1 {
+    gap: 0.25rem !important;
+  }
 }
