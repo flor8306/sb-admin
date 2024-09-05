@@ -2,6 +2,8 @@
 
 .card {
   .card-header {
+    // background-color: $gray-900;
+
     // Format Dropdowns in Card Headings
     .dropdown {
       line-height: 1;
@@ -24,7 +26,7 @@
       font-weight: 900;
       content: '\f107';
       font-family: 'Font Awesome 5 Free';
-      color: $gray-400;
+      color: $white;
     }
     &.collapsed {
       border-radius: $card-border-radius;

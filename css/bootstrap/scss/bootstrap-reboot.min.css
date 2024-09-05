@@ -177,16 +177,16 @@ table {
 }
 
 caption {
-  padding-top: 0.55rem;
-  padding-bottom: 0.55rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   color: #6c757d;
   text-align: left;
   caption-side: bottom;
 }
 
 th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: center;
+  text-align: center;
 }
 
 label {
