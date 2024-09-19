@@ -1916,7 +1916,7 @@ p.card-text {
     font-size: 14px;
     border: 1px solid rgba(170, 170, 170, .3);
     padding: 10.72px 12.8px;
-    padding: .67rem .8rem;
+    padding: .01rem .8rem;
 }
 
 .form-control-sm,
