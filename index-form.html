@@ -49,7 +49,7 @@
 
     <style>
         body {
-
+            font-size: 13.5px;
             overflow-x: hidden;
             height: 100%;
 
@@ -213,6 +213,17 @@
             width: 14px;
             height: 14px;
             display: block;
+        }
+
+        .before_cancel::after {
+            content: '';
+            background-image: url(./imgs/cancel_24dp_E0760D_FILL0_wght400_GRAD0_opsz24.svg);
+            width: 16px;
+            height: 16px;
+            
+            position: absolute;
+            top: 5%;
+            right: 0;
         }
     </style>
 </head>
@@ -556,22 +567,22 @@
                 <!-- page title area end -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="">
 
                     <div class="main-content-inner">
                         <div class="row">
                             <div class="col-lg-4 col-ml-12">
                                 <div class="row">
                                     <!-- Textual inputs start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div style="overflow: hidden;" class="card">
                                             <div style="position: relative;">
                                                 <h4 style="padding: 20px;color: white;  background-color: #8d8d8d;">
                                                     대출 신청 정보</h4>
-                                                <span style="position: absolute; right: 5%; top: 30%;"
+                                                <span style="position: absolute; right: 5%; top: 30%; ;"
                                                     class="tw-icon_arrow_up"></span>
                                             </div>
-                                            <div class="card-body">
+                                            <div style="padding:16px 20px;" class="card-body">
 
                                                 <div class="form-group row">
                                                     <label for="example-text-input"
@@ -622,11 +633,21 @@
                                                 <div class="form-group row mb-3">
                                                     <label for="formFile" class="col-form-label col-sm-3">담보선택</label>
                                                     <div class="col-sm-9">
-                                                        <span style="border-radius: 5px; font-size: 13px; padding: 6px 14px; background-color: orange; cursor: pointer;">
-                                                            <label style="cursor: pointer; margin-bottom: 0;color: white; font-weight:normal; "
-                                                                id="formFile">파일선택<input style="width: 1px; height: 1px;"
-                                                                    type="file" id="formFile"></label>
-                                                        </span>
+                                                        <!-- <span style="border-radius: 5px; padding: 6px 14px; background-color: orange; cursor: pointer;">
+                                                            <label style="cursor: pointer; margin-bottom: 0;color: white; font-weight:normal; font-size: 13px; "
+                                                                id="formFile">파일선택<input style="width: 1px; height: 1px;" type="file" id="formFile"></label></span> -->
+                                                        <div style="border-radius: 5px; background-color: orange; font-weight: normal; font-size: 13px; color: white; padding: 6px 14px; text-align: center; margin-bottom: 10px;"
+                                                            class>파일업로드 선택하기</div>
+                                                        <div style="text-align: center;margin-bottom: 10px;">2 files 선택됨
+                                                        </div>
+                                                        <div style="border-radius: 5px; background-color: rgb(249, 225, 179); font-weight: normal; font-size: 13px; color: rgb(224, 118, 13); padding: 6px 14px; text-align:center;margin-bottom: 10px; "
+                                                         >image.jpg
+                                                            <span style="position: relative; margin-left: 22px;" class="before_cancel"></span>
+                                                        </div>
+                                                        <div style="border-radius: 5px; background-color: rgb(249, 225, 179); font-weight: normal; font-size: 13px; color: rgb(224, 118, 13); padding: 6px 14px; text-align:center;margin-bottom: 10px; "
+                                                         >image.jpg
+                                                            <span style="position: relative; margin-left: 22px;" class="before_cancel"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -712,44 +733,45 @@
                                                 <div class="form-group row ">
                                                     <label for="example-text-input-sm"
                                                         class="col-form-label col-sm-3">기본금리</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" type="text" placeholder=""
-                                                            id="example-text-input-sm">
+                                                    <div class="col-sm-9">
+                                                        <input style="position: relative;" class="form-control"
+                                                            type="text" placeholder="" id="example-text-input-sm">
+                                                        <span
+                                                            style="position: absolute; top: 3px; right: 25px;">%</span>
                                                         <div class="">Sorry, that username's taken. Try
                                                             another?</div>
                                                     </div>
-                                                    <span style="" class="col-sm-1">%
-                                                    </span>
+
                                                 </div>
                                                 <div class="form-group row ">
                                                     <label for="example-text-input-sm"
                                                         class="col-form-label col-sm-3">만기시 최고 금리</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" type="text" placeholder=""
-                                                            id="example-text-input-sm">
+                                                    <div class="col-sm-9">
+                                                        <input style="position: relative;" class="form-control"
+                                                            type="text" placeholder="" id="example-text-input-sm"> <span
+                                                            style="position: absolute; top: 3px; right: 25px;">%</span>
                                                     </div>
-                                                    <span style="" class="col-sm-1">%
-                                                    </span>
+
                                                 </div>
                                                 <div class="form-group row ">
                                                     <label for="example-text-input-sm"
                                                         class="col-form-label col-sm-3">연체 금리</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" type="text" placeholder=""
-                                                            id="example-text-input-sm">
+                                                    <div class="col-sm-9">
+                                                        <input style="position: relative;" class="form-control"
+                                                            type="text" placeholder="" id="example-text-input-sm"> <span
+                                                            style="position: absolute; top: 3px; right: 25px;">%</span>
                                                     </div>
-                                                    <span style="" class="col-sm-1">%
-                                                    </span>
+
                                                 </div>
                                                 <div class="form-group row ">
                                                     <label for="example-text-input-sm"
                                                         class="col-form-label col-sm-3">낙찰가율</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" type="text" placeholder=""
-                                                            id="example-text-input-sm">
+                                                    <div class="col-sm-9">
+                                                        <input style="position: relative;" class="form-control"
+                                                            type="text" placeholder="" id="example-text-input-sm"> <span
+                                                            style="position: absolute; top: 3px; right: 25px;">%</span>
                                                     </div>
-                                                    <span style="" class="col-sm-1">%
-                                                    </span>
+
                                                 </div>
                                                 <div class="form-group row">
                                                     <div class="col-sm-3">차입자 정보 조회일시</div>
@@ -760,8 +782,10 @@
 
                                                         </div>
 
-                                                        <span style="border-radius: 5px; font-size: 13px; padding: 6px 14px; background-color: orange; cursor: pointer;">
-                                                            <label style="cursor: pointer; margin-bottom: 0;color: white; font-weight: normal;"
+                                                        <span
+                                                            style="border-radius: 5px; font-size: 13px; padding: 6px 14px; background-color: orange; cursor: pointer;">
+                                                            <label
+                                                                style="cursor: pointer; margin-bottom: 0;color: white; font-weight: normal;"
                                                                 id="">차입자정보상세<input style="width: 1px; height: 1px;"
                                                                     type="button" id=""></label>
                                                         </span>
@@ -778,7 +802,7 @@
                                     <!-- Textual inputs end -->
 
                                     <!-- Checkboxes start -->
-                                    <!-- <div class="col-12 mt-5">
+                                    <!-- <div class="col-12 mt-2">
                                         <div class="card">
                                             <div class="card-body">
                                                 <h4 class="header-title">Checkboxes</h4>
@@ -851,7 +875,7 @@
                             <div class="col-lg-5 col-ml-12">
                                 <div class="row">
                                     <!-- basic form start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div style="overflow: hidden;" class="card">
                                             <div style="position: relative;">
                                                 <h4 style="padding: 20px;color: white;  background-color: #8d8d8d;">
@@ -925,7 +949,7 @@
                                     <!-- basic form end -->
 
                                     <!-- Input Sizes start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div style="overflow: hidden;" class="card">
                                             <div style="position: relative;">
                                                 <h4 style="padding: 20px;color: white;  background-color: #8d8d8d;">
@@ -939,18 +963,32 @@
                                                     <label for="formFile" class="col-form-label col-sm-3">등기부등본
                                                         사본(모집중)</label>
                                                     <div class="col-sm-9">
-                                                        <span style="border-radius: 5px; font-size: 13px; padding: 6px 14px; background-color: orange; cursor: pointer;">
-                                                            <label style="cursor: pointer; margin-bottom: 0;color: white; font-weight: normal;"
-                                                                id="">파일선택<input style="width: 1px; height: 1px;"
-                                                                    type="file" id=""></label>
-                                                        </span>
+                                                        <span
+                                                            style="border-radius: 5px; padding: 6px 14px; background-color: orange; cursor: pointer;">
+                                                            <label
+                                                                style="cursor: pointer; margin-bottom: 0;color: white; font-weight:normal; font-size: 13px; "
+                                                                id="formFile">파일선택<input
+                                                                    style="width: 1px; height: 1px;" type="file"
+                                                                    id="formFile"></label></span>
+                                                        <span
+                                                            style="border:1px solid orange; margin-left: 10px; padding: 5px 14px; border-radius: 5px; box-sizing: border-box">선택된
+                                                            파일 없음</span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row mb-3">
                                                     <label for="formFile" class="col-form-label col-sm-3">등기부등본
                                                         사본(모집중)</label>
                                                     <div class="col-sm-9">
-                                                        <input class="" type="file" id="formFile">
+                                                        <span
+                                                            style="border-radius: 5px; padding: 6px 14px; background-color: orange; cursor: pointer;">
+                                                            <label
+                                                                style="cursor: pointer; margin-bottom: 0;color: white; font-weight:normal; font-size: 13px; "
+                                                                id="formFile">파일선택<input
+                                                                    style="width: 1px; height: 1px;" type="file"
+                                                                    id="formFile"></label></span>
+                                                        <span
+                                                            style="border:1px solid orange; margin-left: 10px; padding: 5px 14px; border-radius: 5px; box-sizing: border-box">선택된
+                                                            파일 없음</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -965,7 +1003,7 @@
                             <div class="col-lg-3 col-ml-12">
                                 <div class="row">
                                     <!-- basic form start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div style="overflow: hidden;" class="card">
                                             <div style="position: relative;">
                                                 <h4 style="padding: 20px;color: white;  background-color: #8d8d8d;">
@@ -973,7 +1011,7 @@
                                                 <span style="position: absolute; right: 5%; top: 30%;"
                                                     class="tw-icon_arrow_up"></span>
                                             </div>
-                                            <div class="card-body">
+                                            <div style="padding: 10px;" class="card-body">
 
                                             </div>
                                         </div>
@@ -981,7 +1019,7 @@
                                     <!-- basic form end -->
 
                                     <!-- Input Sizes start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div style="overflow: hidden;" class="card">
                                             <div style="position: relative;">
                                                 <h4 style="padding: 20px;color: white;  background-color: #8d8d8d;">
@@ -1012,7 +1050,7 @@
                                     <!-- Input Sizes end -->
 
                                     <!-- Input Grid start -->
-                                    <div class="col-12 mt-5">
+                                    <div class="col-12 mt-2">
                                         <div class="card">
                                             <div class="card-body">
 
